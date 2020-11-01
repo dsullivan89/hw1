@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<title> DirectX Tutorial </title>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<header>
+		<h1>DirectX Programming Tutorial</h1>
+	</header>
+	<hr />
+	<main>
+		<div class="vertical-menu">
+			<a href="index.html" class="active">Home</a>
+			<a href="#" class="active">Lesson 1: Making a Window</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+			<a href="#">Link 4</a>
+		 </div>
+		 <div class="content">
+			<h1>Lesson 1: Creating a Window</h1>
+			<p>Windows apps for games use a slightly different message pump and perhaps handle more
+				windows messages as resizing or moving a window affects the graphics and timing systems.
+			</p>
+			<p>
+				We will step through some code one chunk at a time and explain briefly as we go. First up 
+				is our winmain function. This is the entry point for win32 applications.
+			</p>
+			<h2>Our Entrypoint: The Winmain Function</h2>
+			<pre class="prettyprint">
+				<code class="language-cpp">
+#include &lt;windows.h&gt;
+
+int WINAPI WinMain(HINSTANCE hInstance,    //Main windows function
+HINSTANCE hPrevInstance, 
+LPSTR lpCmdLine,
+int nShowCmd)
+{
+	return 0; // this can be an error code returned from our app.
+}
+				</code>
+			</pre>
+		 </div>
+	</main>
+
+</body>
+<footer>
+
+</footer>
